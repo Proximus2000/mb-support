@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.proximSupp" name="proximSupp" version="0.0.1" provider-name="proximSupp">
+    <addon id="repository.proximSupp" name="proximSupp" version="0.0.2" provider-name="proximSupp">
         <extension point="xbmc.addon.repository" name="proximSupp">
 		    <dir>
                 <info compressed="false">https://raw.githubusercontent.com/Proximus2000/mb-support/master/zips/addons.xml</info>

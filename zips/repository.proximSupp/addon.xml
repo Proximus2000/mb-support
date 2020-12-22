@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.proximSupp" name="proximSupp" version="0.0.6" provider-name="proximSupp">
+    <addon id="repository.proximSupp" name="proximSupp" version="0.0.7" provider-name="proximSupp">
         <extension point="xbmc.addon.repository" name="proximSupp">
-		    <dir>
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+            </dir>
+            <dir>
                 <info compressed="false">https://raw.githubusercontent.com/Proximus2000/mb-support/master/zips/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/Proximus2000/mb-support/master/zips/addons.xml.md5</checksum>
                 <datadir zip="true">https://github.com/Proximus2000/mb-support/raw/master/zips</datadir>

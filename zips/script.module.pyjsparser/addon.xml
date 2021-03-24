@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.8" provider-name="Addons4Kodi">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
+    <!-- <import addon="xbmc.python" version="2.25.0"/> -->
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">

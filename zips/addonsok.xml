@@ -92,11 +92,11 @@
   </extension>
 </addon>
 
-<addon id="script.module.js2py" name="js2py" version="0.6.7" provider-name="Addons4Kodi">
+<addon id="script.module.js2py" name="js2py" version="0.6.3" provider-name="Addons4Kodi">
   <requires>
-    <!-- <import addon="xbmc.python" version="2.25.0"/> -->
+    <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.six" version="1.11.0"/>
-    <import addon="script.module.pyjsparser" version="2.8"/>
+    <import addon="script.module.pyjsparser" version="2.7.1"/>
     <import addon="script.module.tzlocal" version="1.5.1"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
@@ -113,9 +113,9 @@
   </extension>
 </addon>
 
-<addon id="script.module.pyjsparser" name="pyjsparser" version="2.8" provider-name="Addons4Kodi">
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
   <requires>
-    <!-- <import addon="xbmc.python" version="2.25.0"/> -->
+    <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -131,31 +131,33 @@
   </extension>
 </addon>
 
-<addon id="script.module.pytz" name="pytz" version="2019.3.0+matrix.2" provider-name="Stuart Bishop, Paul Backhouse">
+<addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
 	<requires>
-    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib"/>
 	<extension point="xbmc.addon.metadata">
-	    <summary lang="en_GB">World Timezone Definitions for Python.</summary>
-	    <description lang="en_GB">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
+	    <summary lang="en">World Timezone Definitions for Python.</summary>
+	    <description lang="en">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
 	    <platform>all</platform>
+	    <language></language>
 	    <license>MIT</license>
-	    <website>https://pythonhosted.org/pytz/</website>
-	    <source>https://github.com/stub42/pytz</source>
-	    <assets>
-            <icon>icon.png</icon>
-	    </assets>
+	    <forum></forum>
+	    <website>https://pypi.python.org/pypi/pytz/</website>
+	    <source>https://github.com/powlo/script.module.pytz</source>
+	    <email></email>
+	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.27" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.18" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -180,23 +182,21 @@
 
 <addon id="script.module.six"
        name="six"
-       version="1.14.0+matrix.2"
+       version="1.13.0"
        provider-name="gutworth">
   <requires>
-    <!-- <import addon="xbmc.python"	version="3.0.0"/> -->
+    <import addon="xbmc.python"
+    		version="2.14.0"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python 2 and 3 compatibility utilities.</summary>
-    <description lang="en_GB">Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <summary lang="en">Python 2 and 3 compatibility utilities.</summary>
+    <description lang="en">Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
     <platform>all</platform>
     <license>MIT</license>
     <source>https://pypi.org/project/six/</source>
     <website>https://pypi.org/project/six/</website>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
   </extension>
 </addon>
 
@@ -278,10 +278,10 @@
 
 <addon id="script.module.tzlocal"
        name="tzlocal"
-       version="2.0.1"
+       version="2.0.0"
        provider-name="Lennart Regebro">
   <requires>
-    <!-- <import addon="xbmc.python" version="2.25.0"/> -->
+    <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.pytz" version="2014.2"/>
   </requires>
   <extension point="xbmc.python.module"
